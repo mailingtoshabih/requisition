@@ -6,6 +6,12 @@ interface DataState {
     noOfOpenings: number;
     requisitionTitle: string;
     urgency: string;
+    jobDetails: string;
+    jobLocation: string;
+    jobTitle: string;
+    interviewDuration: string;
+    interviewLanguage: string;
+    interviewMode: string;
   };
   jobDetails: {
     jobDetails: string;
@@ -25,6 +31,12 @@ const initialState: DataState = {
     noOfOpenings: 0,
     requisitionTitle: "",
     urgency: "",
+    jobDetails: "",
+    jobLocation: "",
+    jobTitle: "",
+    interviewDuration: "",
+    interviewLanguage: "",
+    interviewMode: "",
   },
   jobDetails: {
     jobDetails: "",
