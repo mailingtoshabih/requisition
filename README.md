@@ -21,3 +21,8 @@ Solution : Resolved the issue by importing the Yup library, ensuring proper func
 Remaining Bugs
 ______________
 Bug : The dropdown menu is still overlapping elements below it. Unfortunately, this issue remains unresolved due to time constraints. Else everything is working great.
+
+
+Bottom Line
+___________
+While TypeScript and Next js was not initially in my confort zone of technical skills, I embraced the challenge head-on. Through research, exploration of tutorials, google, documentations and countless hours of trial and error, I managed to successfully tackle the complexities of the project and fixed almost all bugs.
