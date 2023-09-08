@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Fixed Bug report
 
-## Getting Started
+Bug 1: Empty Form Submission
+Issue: In both the JobDetailsForm and InterviewDetailsForm components, the next button was working and the form was submitting even when some fields were empty.
+Solution: We used Formik's isValid property to disable the "Submit" button until the form is valid, ensuring that the form is not submitted with empty fields.
 
-First, run the development server:
+Bug 2: Data Not Updating in Real-time
+Issue: The data in the PreviewCard component was not updating in real-time as expected.
+Solution: Used react-redux toolkit. Verified that the data is being fetched and updated correctly from the Redux store. Ensured that the component re-renders when data changes to reflect updates.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Bugs 3 : Non Retaining Values
+Solution : Retained values using redux-toolkit and retained data in the global store. Data is stored in the global store for consistent accessibility and persistence.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Bug 4 : On the job details form when the user submits the form it was not going to the next step even when there are no errors on the screen.
+Solution : In Interview Setting, Added validation schema in the Interview Settings component and configured the necessary adjustments to enable smooth form advancement.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Bug 5 : Missing Yup Library
+Solution : Resolved the issue by importing the Yup library, ensuring proper functionality in form validation.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Remaining Bugs
+______________
+Bug : The dropdown menu is still overlapping elements below it. Unfortunately, this issue remains unresolved due to time constraints. Else everything is working great.
